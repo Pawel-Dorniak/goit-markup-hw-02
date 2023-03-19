@@ -1,49 +1,178 @@
-* {
-    text-decoration: none;
+:root {
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color: #2F303A;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --background-button-color: #F5F4FA;
+    --backlight-color: #2196F3;
+    --color-white:#FFFFFF;
 }
 
 body {
-    margin-left: 215px;
-    margin-right: 215px;
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
 }
 
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32 0 32 0;
+    border-bottom: 1px solid #ECECEC;
 }
- 
+
 .logo {
-    font-size: 26px;
+    text-decoration: none;
     font-family: "Raleway", sans-serif;
-    color: #000000;
+    font-weight: 700px;
+    font-size: 26px;
+    color: var(--primary-text-color);
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-left: 215px;
+    line-height: 1.2;
 }
 
-.logo>.span {
-    color: #2196F3;
+.second-logo-color {
+    color: var(--backlight-color);
 }
 
-ul {
+.logo:focus {
+    outline: none;
+    text-decoration: underline;
+    text-decoration-color: var(--backlight-color);
+}
+
+.menu {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    margin-left: 93px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
-  
-li {
-    display: inline-block;
-    margin: 46px;
+
+.link-navi {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    margin-right: 46px;
+    width: 261px;
+    height: 16px;
+    line-height: 1.2;
+}
+
+.link-navi:hover,
+.link-navi:focus {
+    color:  var(--backlight-color);
+    outline: none;
+}
+
+.general-contact {
+    display: flex;
+    margin-left: 364px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .contact {
-    color: #757575;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
-main {
-    border-top: solid #ECECEC;
-    
+.contact:hover,
+.contact:focus {
+    color:  var(--backlight-color);
+    outline: none;
 }
 
-div {
-    display: inline-block;
+.menu-buttoms {
+    display: flex;
+    list-style: none;
+    margin-left: 510px;
+    margin-top: 94px ;
+    margin-bottom: 34px;
 }
+
+.button-portfolio {
+    background-color: var(--background-button-color);
+    margin: 8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    width: 93px;
+    height: 38px;
+    border-radius: 4px;
+    cursor: pointer;
+    border-style: none;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+    color: var(--color-white);
+    background-color: var(--backlight-color);
+    outline: none;
+}
+
+.primary-portfolio-img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 34px;
+    margin-bottom: 94px;
+    margin-left: 165px;
+}
+
+.secondary-portfolio-img {
+    border: 1px solid #ECECEC;
+    margin: 30px;
+}
+
+.photo-headers {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--primary-text-color);
+}
+
+.photo-category {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--secondary-text-color);
+}
+
+.footer-kontakt {
+    padding-top: 94px;
+    background-color: var(--secondary-background-color);
+    background-size: cover;
+    padding-left: 200px;
+    margin: 9px;
+}
+
+.logo-footer {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700px;
+    font-size: 26px;
+    margin-bottom: 60px;
+    color: var(--color-white);
+    margin-top: 60px;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.address-footer {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
